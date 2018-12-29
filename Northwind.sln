@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Northwind.Repositorios.SqlServer", "Northwind.Repositorios.SqlServer\Northwind.Repositorios.SqlServer.csproj", "{FAC444C1-8218-4ED9-8410-CED1A2B745B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC444C1-8218-4ED9-8410-CED1A2B745B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC444C1-8218-4ED9-8410-CED1A2B745B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC444C1-8218-4ED9-8410-CED1A2B745B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC444C1-8218-4ED9-8410-CED1A2B745B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4255412E-D160-4254-A45D-B06E2D0C9681}
+	EndGlobalSection
+EndGlobal
