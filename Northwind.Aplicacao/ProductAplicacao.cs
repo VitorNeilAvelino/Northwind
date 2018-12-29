@@ -20,7 +20,7 @@ namespace Northwind.Aplicacao
             db = new NorthwindUnitOfWork();
         }
 
-        public List<Product> Obter()
+        public List<ProductReadModel> Obter()
         {
             return db.Products.Obter();
         }

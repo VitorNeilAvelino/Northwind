@@ -32,9 +32,17 @@ namespace Northwind.Repositorios.SqlServer
             dbContext.Products.Add(product);
         }
 
-        public List<Product> Obter()
+        public List<ProductReadModel> Obter()
         {
-            return dbContext.Products.OrderBy(p => p.ProductName).ToList();
+            return dbContext.Products
+                .Select(p => new ProductReadModel
+                {
+                    ProductID = p.ProductID,
+                    ProductName = p.ProductName,
+                    UnitPrice = p.UnitPrice,
+                    UnitsInStock = p.UnitsInStock
+                })
+                .OrderBy(p => p.ProductName).ToList();
         }
     }
 }

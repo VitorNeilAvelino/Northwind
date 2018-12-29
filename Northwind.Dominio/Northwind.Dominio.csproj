@@ -47,6 +47,7 @@
     <Compile Include="Entidades\Order.cs" />
     <Compile Include="Entidades\OrderDetail.cs" />
     <Compile Include="Entidades\Product.cs" />
+    <Compile Include="Entidades\ProductReadModel.cs" />
     <Compile Include="Interfaces\INorthwindUnitOfWork.cs" />
     <Compile Include="Interfaces\IProductRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

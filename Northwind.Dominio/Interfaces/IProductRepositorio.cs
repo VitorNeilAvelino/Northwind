@@ -5,7 +5,7 @@ namespace Northwind.Dominio.Interfaces
 {
     public interface IProductRepositorio
     {
-        List<Product> Obter();
+        List<ProductReadModel> Obter();
         void Inserir(Product product);
         void Excluir(int id);
         void Atualizar(Product product);
