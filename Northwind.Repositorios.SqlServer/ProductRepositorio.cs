@@ -3,6 +3,7 @@ using System.Data.Entity;
 using System.Linq;
 using Northwind.Dominio.Entidades;
 using Northwind.Dominio.Interfaces;
+using AutoMapper.QueryableExtensions;
 
 namespace Northwind.Repositorios.SqlServer
 {
@@ -35,14 +36,16 @@ namespace Northwind.Repositorios.SqlServer
         public List<ProductReadModel> Obter()
         {
             return dbContext.Products
-                .Select(p => new ProductReadModel
-                {
-                    ProductID = p.ProductID,
-                    ProductName = p.ProductName,
-                    UnitPrice = p.UnitPrice,
-                    UnitsInStock = p.UnitsInStock
-                })
-                .OrderBy(p => p.ProductName).ToList();
+                .ProjectTo<ProductReadModel>()
+                .OrderBy(p => p.ProductName)
+                .ToList();
+        }
+
+        public ProductReadModel Obter(int id)
+        {
+            return dbContext.Products
+                .ProjectTo<ProductReadModel>()
+                .SingleOrDefault(p => p.ProductID == id);
         }
     }
 }

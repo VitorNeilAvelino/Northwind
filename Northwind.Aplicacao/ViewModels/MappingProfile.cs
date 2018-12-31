@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Northwind.Dominio.Entidades;
 
 namespace Northwind.Aplicacao.ViewModels
 {
@@ -6,7 +7,8 @@ namespace Northwind.Aplicacao.ViewModels
     {
         public MappingProfile()
         {
-
+            CreateMap<Product, ProductReadModel>();
+            CreateMap<ProductViewModel, Product>();
         }
     }
 }

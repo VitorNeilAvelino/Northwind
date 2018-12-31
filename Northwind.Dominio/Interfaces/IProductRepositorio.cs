@@ -9,5 +9,6 @@ namespace Northwind.Dominio.Interfaces
         void Inserir(Product product);
         void Excluir(int id);
         void Atualizar(Product product);
+        ProductReadModel Obter(int id);
     }
 }

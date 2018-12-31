@@ -46,7 +46,7 @@ namespace Northwind.Repositorios.SqlServer
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<Product>()
-                .HasMany(e => e.Order_Details)
+                .HasMany(e => e.OrderDetails)
                 .WithRequired(e => e.Product)
                 .WillCascadeOnDelete(false);
 
